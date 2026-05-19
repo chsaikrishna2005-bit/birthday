@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday! 🎂</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Intro Countdown Overlay -->
+    <div id="intro-countdown" class="intro-countdown">
+        <div class="countdown-number" id="countdown-number">3</div>
+        <p class="countdown-text">Get Ready for a Surprise!</p>
+    </div>
+
+    <!-- Main Content (Hidden Initially) -->
+    <div id="main-content" class="main-content hidden">
+        <!-- Background Music -->
+        <audio id="bgMusic" loop autoplay>
+            <source src="birthday-music.mp3.mpeg" type="audio/mpeg">
+        </audio>
+
+        <!-- Profile Photo -->
+        <div class="profile-photo"
+            style="background-image: url('profile.jpeg'); background-size: cover; background-position: center;">
+        </div>
+
+        <!-- Music Control Button -->
+        <button id="musicBtn" class="music-btn">🎵 Play Music</button>
+
+        <!-- Confetti Container -->
+        <div id="confetti-container"></div>
+
+        <!-- Balloons Container -->
+        <div id="balloons-container"></div>
+
+        <!-- Page 1: Cake Section -->
+        <section id="page-cake" class="page active">
+            <h1 class="page-title">Make a Wish! 🎂</h1>
+            <div class="cake-container">
+                <div class="cake">
+                    <div class="cake-top">
+                        <span class="cake-text">Happy</span> <!-- Change text here -->
+                    </div>
+                    <div class="cake-middle">
+                        <span class="cake-text">Birthday</span> <!-- Change text here -->
+                    </div>
+                    <div class="cake-bottom">
+                        <span class="cake-text">To You</span> <!-- Change text here -->
+                    </div>
+                    <div class="candles">
+                        <div class="candle">
+                            <div class="flame"></div>
+                        </div>
+                        <div class="candle">
+                            <div class="flame"></div>
+                        </div>
+                        <div class="candle">
+                            <div class="flame"></div>
+                        </div>
+                        <div class="candle">
+                            <div class="flame"></div>
+                        </div>
+                        <div class="candle">
+                            <div class="flame"></div>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-top: 10px;">
+                    <button id="blowCandles" class="btn-pink">Blow the Candles! 🎉</button>
+                    <button id="nextToWishes" class="btn-next" style="margin-top: 0;">See Birthday Wishes →</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Page 2: Birthday Wishes & Countdown -->
+        <section id="page-wishes" class="page">
+            <div class="content">
+                <h1 class="animated-title">Happy Birthday!</h1>
+                <div id="countdown" class="countdown">
+                    <div class="countdown-item">
+                        <span id="date">00</span>
+                        <p>Date</p>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="month">00</span>
+                        <p>Month</p>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="year">0000</span>
+                        <p>Year</p>
+                    </div>
+                </div>
+                <p class="subtitle animated-fade">Wishing you a day filled with love and joy!</p>
+
+                <div class="messages-container">
+                    <div class="message-card">
+                        <p>I hope you will achieve all you have dreamed and all you want!
+                            Be like what you are never change yourself for someone.Take care,eat well,sleep well,dont
+                            use phn,lap midnights.
+                            memories:Mahotsav,h block,u block,dragon ride,gaint wheel,seminar hall,talking
+                            tables,mhp,pani puri,ice creams,chocolates.
+                            Birthday roju ee sodhi antha chepina ani "Sorry",em anukoku.
+
+                            Once again HAPPY BIRTHDAY LUV
+                        </p>
+                    </div>
+                    <div class="message-card">
+                        <p>Its's almost three years since we know each other,i hope this will last forever but i also
+                            don't think so.
+                            I will never forget how the first time i saw you,coming into class crying on your father.For
+                            first time i felt
+                            different,maybe for that little cute hair i attracted for.On that day onwards i am sneaking
+                            on you daily.
+                            Coming to class a little late so that i can see you in first bench,and you can see me that i
+                            am looking to you.
+                            After many struggules i got a chance to talk with you,the first day we talk i never forget
+                            that it was almost morning 4:30.
+                            Slowly that interest became L**e.You know that didn't went well.
+
+                        </p>
+                    </div>
+                    <div class="message-card">
+                        <p>
+                            Happy Birthday Sarayu(Ammai).I don't know what to say.I just want to make sure that you are
+                            the best perosn and my most favourite i met in my life
+                            nuvu antey istam endhuko telidhu,nake telidhu entha istamo nuv naku.entha istam ante nuv
+                            nanu love cheyavu cheyalevu ani telisi kuda ninnu love chestunnna
+                            nanu nenu hurt cheskunta ani telisi kuda netho matladutunna.matladakunda vunte nuv ekkada
+                            dhooram avthavo ani bayam.The time we spend together i like to spend
+                            all days.ippatike dhooram ayipoyav matladatam manesthe poorthiga dhooram avthav emo ani
+                            chala bayam vestundhi.andhuke nenu roju entha distrub ayina entha hurt
+                            ayina neetho vundatanike try chestunna,neeku ardam avtundho ledho mari naku telidhu.
+                            idi antha nenu cheskunnadhe le first nundi nuv clear gane vunnav nene ekkuva alochinchi,love
+                            chesi hopes penchukunna.
+                            daniki (.)pettali anukuntunna kani avvatledhu hurt ayina parledhu my heart is like vadhu raa
+                            pothe malli life lo matladalevu.
+                            you don't know how much i take care for you,how much i give priority to you,top lo vuntav na
+                            priority list lo even after all that.
+                            i have so many reasons to give up but i never,and i won't.
+                        </p>
+                    </div>
+                </div>
+
+                <button id="nextToGallery" class="btn-next">View Photo Gallery →</button>
+            </div>
+        </section>
+
+        <!-- Page 3: Photo Gallery -->
+        <section id="page-gallery" class="page">
+            <h2 class="page-title">Precious Memories 📸
+                click each photo
+            </h2>
+            <div class="gallery">
+                <div class="gallery-item"
+                    data-text="Talking Tables lo digamu.most favourite for mine becoz,nenu pettina kadha neeku biryani na hands to.">
+                    <div class="photo-placeholder"
+                        style="background-image: url('gallery1.jpeg'); background-size: cover; background-position: center;">
+                    </div>
+                </div>
+                <div class="gallery-item"
+                    data-text="It's like a reunion in Vcode.Aaroju chepaledhu,kani chala bagunnav Aaa dress lo.inka photos digali anukunna kani....">
+                    <div class="photo-placeholder"
+                        style="background-image: url('gallery2.jpeg'); background-size: cover; background-position: center;">
+                    </div>
+                </div>
+                <div class="gallery-item"
+                    data-text="You look so cute here!it's my wallpaper in my whatsapp.phn open chesninapudalla ala chusthu vunta.">
+                    <div class="photo-placeholder"
+                        style="background-image: url('gallery3.jpeg'); background-size: cover; background-position: center;">
+                    </div>
+                </div>
+                <div class="gallery-item" data-text="One of my favorite pictures of you.most unexpected photo.">
+                    <div class="photo-placeholder"
+                        style="background-image: url('gallery4.jpeg'); background-size: cover; background-position: center;">
+                    </div>
+                </div>
+                <div class="gallery-item" data-text="Such a special moment.chudu entha andham ga vunnavo navutunte.eppudu navutha vunte navvithe teeths kanapadatai ani insecure ga feel avaku eppudu.
+                anukune vallu ela vunna edhokati anukuntaru.just smile.">
+                    <div class="photo-placeholder"
+                        style="background-image: url('gallery5.jpeg'); background-size: cover; background-position: center;">
+                    </div>
+                </div>
+                <div class="gallery-item"
+                    data-text="Aaaa here comes my most most favourite.Aaa roju nuvv petinapudu pic ni chusi entha sepu siggu paddano le.">
+                    <div class="photo-placeholder"
+                        style="background-image: url('gallery6.jpeg'); background-size: cover; background-position: center;">
+                    </div>
+                </div>
+                <div class="gallery-item" data-text="No words just regret and sad that you are not mine.">
+                    <div class="photo-placeholder"
+                        style="background-image: url('gallery7.jpeg'); background-size: cover; background-position: center;">
+                    </div>
+                </div>
+                <div class="gallery-item"
+                    data-text="2nd Mahotsav 2nd day.asalu ela kurchunnamo manake telidhu time ala ayipoindhi podduna 11 ki start chesthe evng 6 ki lecham,em tinaledhu em tagaledhu.">
+                    <div class="photo-placeholder"
+                        style="background-image: url('gallery8.jpeg'); background-size: cover; background-position: center;">
+                    </div>
+                </div>
+                <div class="gallery-item"
+                    data-text="3rd mahotsav 3rd day.adi edho ekkam round ga tirigindhi abhooo mamuluga ledhu le.">
+                    <div class="photo-placeholder"
+                        style="background-image: url('gallery9.jpeg'); background-size: cover; background-position: center;">
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; justify-content: center;">
+                <button id="backToWishes" class="btn-next" style="margin-top: 10px;">← Back to Wishes</button>
+            </div>
+        </section>
+
+        <!-- Photo Modal -->
+        <div id="photo-modal" class="photo-modal hidden">
+            <span class="close-modal">&times;</span>
+            <div class="modal-content">
+                <img id="modal-img" src="" alt="Gallery Photo">
+                <p id="modal-text" class="modal-text"></p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p class="footer-text">Made with Unending ❤️ Just for You</p>
+            <p class="footer-subtext">I loved you,i love you and i will love you forever and ever.
+                with love,Sai Krishna(Abbai)
+            </p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
